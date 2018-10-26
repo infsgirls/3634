@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/beginner"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/holo_orange_dark"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/beginner"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:tint="@color/white"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img1"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif"
+                            android:text="For Beginners"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/middle"
+                    android:layout_width="match_parent"
+                    android:background="@color/green"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/middle"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img2"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif"
+                            android:text="Intermediate Expertise"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/expert"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorAccent"
+                    android:layout_weight="0.45"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/expert"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img3"
+                            android:layout_centerHorizontal="true"
+                            android:text="Advanced Content"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/quiz"
+                    android:layout_width="match_parent"
+                    android:background="@color/blue"
+                    android:layout_weight="0.45"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/images"
+                            android:adjustViewBounds="true"
+
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img4"
+                            android:layout_centerHorizontal="true"
+                            android:text="Quiz Me!"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
