@@ -62,7 +62,7 @@ public class QuizActivity1 extends AppCompatActivity {
 
     //This method provides the list of questions that will be asked, it is invoked first and foremost
         public void setUpQuestion(){
-            questionModelArrayList.add(new QuestionModel("An ERD is a graphical representation of an information system that depicts the ____________ among people, objects, places, concepts or events within that system.", "relationships"));
+            questionModelArrayList.add(new QuestionModel("An ERD is a graphical representation that depicts the ____________ among people, objects, places, concepts or events within that system.", "relationships"));
             questionModelArrayList.add(new QuestionModel("Properties or characteristics of entities are called ____________.", "attributes"));
             questionModelArrayList.add(new QuestionModel("The relationship of a customer placing an order for multiple products is a ___________ relationship.", "1:M"));
             questionModelArrayList.add(new QuestionModel("A customer who has an email address stored in a company's database is a ____________ relationship.", "1:1"));
